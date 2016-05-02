@@ -6,7 +6,8 @@ var data = require('../data.json');
 
 router.get('/', function (request, response) {
     response.render('index', {
-        title: 'Nodeit'
+        title: 'Nodeit',
+        posts: data.posts
     });
 });
 
