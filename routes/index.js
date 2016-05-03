@@ -11,4 +11,12 @@ router.get('/', function (request, response) {
     });
 });
 
+router.post('/api/like', function (request, response) {
+    var index = request.body.index;
+
+    data.posts[index].likes++;
+
+    response.sendStatus(200);
+});
+
 module.exports = router;
