@@ -11,6 +11,12 @@ router.get('/', function (request, response) {
     });
 });
 
+router.get('/submit', function (request, response) {
+    response.render('submit', {
+        title: 'Submit Post'
+    });
+});
+
 router.post('/api/like', function (request, response) {
     var index = request.body.index;
 
