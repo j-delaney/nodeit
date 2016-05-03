@@ -1,5 +1,11 @@
 <a href="/">Return Home</a>
 
+{{#if status}}
+    <div class="status">
+        {{status}}
+    </div>
+{{/if}}
+
 <form action="/submit" method="post">
     <div>
         <label for="title">Title: </label>
